@@ -71,22 +71,20 @@ interface Vimeo {
 	 * look at the POST /me/videos endpoint.
 	 *
 	 * @param string $file_path
-	 * @param boolean $upgrade_to_1080
 	 * @param null $machine_id
 	 * @return array Status
 	 */
-	public function upload($file_path, $upgrade_to_1080 = false, $machine_id = null);
+	public function upload($file_path, $machine_id = null);
 
 	/**
 	 * Replace the source of a single Vimeo video.
 	 *
 	 * @param string $video_uri
 	 * @param string $file_path
-	 * @param boolean $upgrade_to_1080
 	 * @param null $machine_id
 	 * @return array Status
 	 */
-	public function replace($video_uri, $file_path, $upgrade_to_1080 = false, $machine_id = null);
+	public function replace($video_uri, $file_path, $machine_id = null);
 
 	/**
 	 * Uploads an image to an individual picture response.
